@@ -16,6 +16,8 @@ public class queue {
 
         System.out.println(queue01.isEmpty()); // check queue is empty
 
+        System.out.println(queue01.contains("RDR 2")); //check the specify element in the queue
+
         System.out.println(queue01.size()); // returns the count of element in the queue
 
         queue01.poll(); //remove the top element
