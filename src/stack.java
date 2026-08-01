@@ -11,8 +11,9 @@ public class stack{
         stack.push("God Of War");
         stack.push("RDR 2");
         stack.push("GTA 6");
-        System.out.println(stack.empty());
-        System.out.println(stack);
+
+        System.out.println(stack.empty()); //checking the stack is empty
+        System.out.println(stack); //
 
         //remove data from the stack
         stack.pop();
