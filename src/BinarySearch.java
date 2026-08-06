@@ -5,12 +5,15 @@ public class BinarySearch {
         int low = 0;
         int high = array.length-1;
 
+        //run the loop
         while (low<high){
+            //defining the middle
             int middle = low + (high-low)/2;
             int value = array[middle];
 
-            System.out.println("Middle"+value);
+            System.out.println("Middle "+value);
 
+            //create a logic for a new low or high position
             if(target <value){
                 high = middle-1;
             } else if (target >value) {
@@ -32,8 +35,10 @@ public class BinarySearch {
             arr[i] = i+1;
         }
 
-        int target = 44;
+        //defining target
+        int target = 21;
 
+        //using the algorithm
         int index = binary_search(arr,target);
         if(index == -1){
             System.out.println(target + "Not found");
